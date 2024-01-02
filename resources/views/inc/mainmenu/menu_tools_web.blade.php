@@ -5,11 +5,6 @@
         <span class="nav-link-text" data-i18n="nav.tools_app">Tools App</span>
     </a>
     <ul>
-        <li class="{{ Request::is('tools-dashboard-web') ? 'active' : '' }}">
-            <a href="/websakola" title="Profil Aplikasi" data-filter-tags="tools dashboard web">
-                <span class="nav-link-text" data-i18n="nav.tools_dashboard_web">Dashboard Web</span>
-            </a>
-        </li>
         <li class="{{ Request::is('tools-profil-aplikasi') ? 'active' : '' }}">
             <a href="/tools-profil-aplikasi" title="Profil Aplikasi" data-filter-tags="tools profil aplikasi">
                 <span class="nav-link-text" data-i18n="nav.tools_profil_aplikasi">Profil Aplikasi</span>
@@ -61,6 +56,11 @@
         <span class="nav-link-text" data-i18n="nav.manajemen_website">Manajemen Website</span>
     </a>
     <ul>
+        <li class="{{ Request::is('websakola') ? 'active' : '' }}">
+            <a href="/websakola" title="Profil Aplikasi" data-filter-tags="web dashboard">
+                <span class="nav-link-text" data-i18n="nav.web_dashboard_web">Dashboard Web</span>
+            </a>
+        </li>
         <li class="{{ Request::is('web-pengumuman') ? 'active' : '' }}">
             <a href="/web-pengumuman" title="Pengumuman" data-filter-tags="web pengumuman">
                 <span class="nav-link-text" data-i18n="nav.web_pengumuman">Pengumuman</span>
