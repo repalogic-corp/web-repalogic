@@ -31,9 +31,7 @@
         <!-- Top Bar -->
         @include('website.inc.top-bar')
         <!-- /Top Bar -->
-
         @include('website.inc.navbar')
-
         <!-- LAYER SLIDER -->
         @include('website.inc.slide_03')
         <!-- /LAYER SLIDER -->
@@ -43,15 +41,10 @@
         <!-- FOOTER -->
         @include('website.inc.footer')
         <!-- /FOOTER -->
-
     </div>
     <!-- /wrapper -->
-
-
     <!-- SCROLL TO TOP -->
     <a href="#" id="toTop"></a>
-
-
     <!-- PRELOADER -->
     <div id="preloader">
         <div class="inner">

@@ -29,7 +29,6 @@
     <!-- SEARCH HEADER -->
     <div class="search-box over-header">
         <a id="closeSearch" href="#" class="fa fa-remove"></a>
-
         <form action="page-search-result-1.html" method="get">
             <input type="text" class="form-control" placeholder="SEARCH" />
         </form>
@@ -39,15 +38,12 @@
     <!-- TOP NAV -->
     <header id="topNav">
         <div class="container">
-
             <!-- Mobile Menu Button -->
             <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
                 <i class="fa fa-bars"></i>
             </button>
-
             <!-- BUTTONS -->
             <ul class="float-right nav nav-pills nav-second-main">
-
                 <!-- SEARCH -->
                 <li class="search">
                     <a href="javascript:;">
@@ -55,72 +51,48 @@
                     </a>
                 </li>
                 <!-- /SEARCH -->
-
             </ul>
-            <!-- /BUTTONS -->
-
-
-            <!-- Logo -->
             <a class="logo float-left" href="index.html">
                 <img src="/website/assets/images/_smarty/logo_dark.png" alt="" />
             </a>
-
-
-            <!--
-            Top Nav
-
-            AVAILABLE CLASSES:
-            submenu-dark = dark sub menu
-            -->
             <div class="navbar-collapse collapse float-right nav-main-collapse">
                 <nav class="nav-main">
-
-                    <!--
-                    NOTE
-
-                    For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
-                    Direct Link Example:
-
-                    <li>
-                    <a href="#">HOME</a>
-                    </li>
-                    -->
                     <ul id="topMain" class="nav nav-pills nav-main nav-animate-flipInY hover-animate-bounceIn">
                         <li><a href="index.php">Beranda</a></li>
                         <li class="dropdown menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
-                            <a class="dropdown-toggle" href="#">
-                                My Schools
-                            </a>
+                            <a class="dropdown-toggle" href="#">My Schools</a>
                             <ul class="dropdown-menu">
-                                <li><a href="sejarah.php">Sejarah</a></li>
-                                <li class="dropdown">
-                                    <a class="dropdown-toggle" href="#">
-                                        Profile
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="tenaga-pendidik.php">Tenaga Pendidik</a></li>
-                                        <li><a href="tenaga-kependidikan.php">Tenaga Kependdikan</a></li>
-                                        <li><a href="wakil-kepala-sekolah.php">Wakil Kepala Sekolah</a></li>
-                                        <li><a href="ketua-program-studi.php">Ketua Program Studi</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="program-keahlian.php">Program Keahlian</a></li>
-                                <li><a href="wali-kelas.php">Wali Kelas</a></li>
+                                <li><a href="/sejarah">Sejarah</a></li>
+                                <li><a href="/visi-misi">Visi Misi</a></li>
+                                <li><a href="/program-keahlian">Program Keahlian</a></li>
+                                <li><a href="/sarana-prasarana">Sarana Prasarana</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" href="#">
-                                Kesiswaan
-                            </a>
+                        <li class="dropdown menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+                            <a class="dropdown-toggle" href="#">Kepegawaian</a>
                             <ul class="dropdown-menu">
-                                <li><a href="osis.php">Organisasi Siswa Intra Sekolah</a></li>
-                                <li><a href="eskul.php">Organisasi Ekstrakurikuler</a></li>
+                                <li><a href="/tenaga-pendidik">Tenaga Pendidik</a></li>
+                                <li><a href="/tenaga-kependidikan">Tenaga Kependidikan</a></li>
+                                <li><a href="/wakil-kepala-sekolah">Wakil Kepala Sekolah</a></li>
+                                <li><a href="/ketua-program-studi">Ketua Program Studi</a></li>
+                                <li><a href="/wali-kelas">Wali Kelas</a></li>
                             </ul>
                         </li>
-                        <li><a href="event.php">Event</a></li>
-                        <li><a href="galery.php">Galery</a></li>
-                        <li><a href="goblog.php">Go Blog</a></li>
-                        <li><a href="about.php">About Us</a></li>
+                        <li class="dropdown menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+                            <a class="dropdown-toggle" href="#">Kesiswaan</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/osis">Organisasi Siswa Intra Sekolah</a></li>
+                                <li><a href="/eskul">Organisasi Ekstrakurikuler</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+                            <a class="dropdown-toggle" href="#">Repository</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/event">Event</a></li>
+                                <li><a href="/galery">Galery</a></li>
+                                <li><a href="/go-blog">Go Blog</a></li>
+                            </ul>
+                        <li><a href="/about">About Us</a></li>
                         <!--
                         MENU ANIMATIONS
                         .nav-animate-fadeIn
