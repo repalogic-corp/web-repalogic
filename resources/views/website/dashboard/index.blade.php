@@ -442,9 +442,8 @@
     <div class="container mt-50">
         <div class="row">
             <div class="col-md-6">
-                <div class="heading-title heading-border">
-                    <h3>H3 Heading <span>Border Left</span></h3>
-                    <p class="font-lato fs-17">Lorem ipsum dolor sit amet.</p>
+                <div class="heading-title heading-dotted">
+                    <h3>Testimonial <span>pengunjung</span></h3>
                 </div>
                 <div class="owl-carousel text-center owl-mini-testimonial m-0"
                     data-plugin-options='{"singleItem": true, "autoPlay": 4000, "navigation": false, "pagination": true, "transitionStyle":"backSlide"}'>
@@ -496,329 +495,24 @@
             </div>
 
             <div class="col-md-6">
-                <div class="heading-title heading-border">
-                    <h3>H3 Heading <span>Border Right</span></h3>
-                    <p class="font-lato fs-17">Lorem ipsum dolor sit amet.</p>
+                <!-- H3 -->
+                <div class="heading-title heading-dotted text-right">
+                    <h3>Blockquote <span>Orang Terkenal</span></h3>
                 </div>
-                <!--
-                                                                    RELATED CAROUSEL
-
-                                                                    controlls-over		= navigation buttons over the image
-                                                                    buttons-autohide 	= navigation buttons visible on mouse hover only
-
-                                                                    owl-carousel item paddings
-                                                                    .owl-padding-0
-                                                                    .owl-padding-1
-                                                                    .owl-padding-2
-                                                                    .owl-padding-3
-                                                                    .owl-padding-6
-                                                                    .owl-padding-10
-                                                                    .owl-padding-15
-                                                                    .owl-padding-20
-                                                                    -->
-                <div class="text-center">
-                    <div class="owl-carousel owl-padding-1 m-0 buttons-autohide controlls-over"
-                        data-plugin-options='{"singleItem": false, "items": "4", "autoPlay": 3500, "navigation": true, "pagination": false}'>
-
-                        <!-- item -->
-                        <div class="item-box">
-                            <figure>
-                                <span class="item-hover">
-                                    <span class="overlay dark-5"></span>
-                                    <span class="inner">
-
-                                        <!-- lightbox -->
-                                        <a class="ico-rounded lightbox"
-                                            href="/website/demo_files/images/mockups/1200x800/16-min.jpg"
-                                            data-plugin-options='{"type":"image"}'>
-                                            <span class="fa fa-plus fs-20"></span>
-                                        </a>
-
-                                        <!-- details -->
-                                        <a class="ico-rounded" href="portfolio-single-slider.html">
-                                            <span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-                                        </a>
-
-                                    </span>
-                                </span>
-
-                                <img class="img-fluid" src="/website/demo_files/images/mockups/600x399/16-min.jpg"
-                                    width="600" height="399" alt="">
-                            </figure>
-
-                            <div class="item-box-desc">
-                                <h3>Architect Project</h3>
-                                <ul class="list-inline categories m-0">
-                                    <li><a href="#">Architecture</a></li>
-                                    <li><a href="#">Design</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- /item -->
-
-                        <!-- item -->
-                        <div class="item-box">
-                            <figure>
-                                <span class="item-hover">
-                                    <span class="overlay dark-5"></span>
-                                    <span class="inner">
-
-                                        <!-- lightbox -->
-                                        <a class="ico-rounded lightbox"
-                                            href="/website/demo_files/images/mockups/1200x800/4-min.jpg"
-                                            data-plugin-options='{"type":"image"}'>
-                                            <span class="fa fa-plus fs-20"></span>
-                                        </a>
-
-                                        <!-- details -->
-                                        <a class="ico-rounded" href="portfolio-single-slider.html">
-                                            <span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-                                        </a>
-
-                                    </span>
-                                </span>
-
-                                <img class="img-fluid" src="/website/demo_files/images/mockups/600x399/4-min.jpg"
-                                    width="600" height="399" alt="">
-                            </figure>
-
-                            <div class="item-box-desc">
-                                <h3>Architect Project</h3>
-                                <ul class="list-inline categories m-0">
-                                    <li><a href="#">Architecture</a></li>
-                                    <li><a href="#">Design</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- /item -->
-
-                        <!-- item -->
-                        <div class="item-box">
-                            <figure>
-                                <span class="item-hover">
-                                    <span class="overlay dark-5"></span>
-                                    <span class="inner">
-
-                                        <!-- lightbox -->
-                                        <a class="ico-rounded lightbox"
-                                            href="/website/demo_files/images/mockups/1200x800/5-min.jpg"
-                                            data-plugin-options='{"type":"image"}'>
-                                            <span class="fa fa-plus fs-20"></span>
-                                        </a>
-
-                                        <!-- details -->
-                                        <a class="ico-rounded" href="portfolio-single-slider.html">
-                                            <span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-                                        </a>
-
-                                    </span>
-                                </span>
-
-                                <img class="img-fluid" src="/website/demo_files/images/mockups/600x399/5-min.jpg"
-                                    width="600" height="399" alt="">
-                            </figure>
-
-                            <div class="item-box-desc">
-                                <h3>Architect Project</h3>
-                                <ul class="list-inline categories m-0">
-                                    <li><a href="#">Architecture</a></li>
-                                    <li><a href="#">Design</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- /item -->
-
-                        <!-- item -->
-                        <div class="item-box">
-                            <figure>
-                                <span class="item-hover">
-                                    <span class="overlay dark-5"></span>
-                                    <span class="inner">
-
-                                        <!-- lightbox -->
-                                        <a class="ico-rounded lightbox"
-                                            href="/website/demo_files/images/mockups/1200x800/6-min.jpg"
-                                            data-plugin-options='{"type":"image"}'>
-                                            <span class="fa fa-plus fs-20"></span>
-                                        </a>
-
-                                        <!-- details -->
-                                        <a class="ico-rounded" href="portfolio-single-slider.html">
-                                            <span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-                                        </a>
-
-                                    </span>
-                                </span>
-
-                                <img class="img-fluid" src="/website/demo_files/images/mockups/600x399/6-min.jpg"
-                                    width="600" height="399" alt="">
-                            </figure>
-
-                            <div class="item-box-desc">
-                                <h3>Architect Project</h3>
-                                <ul class="list-inline categories m-0">
-                                    <li><a href="#">Architecture</a></li>
-                                    <li><a href="#">Design</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- /item -->
-
-                        <!-- item -->
-                        <div class="item-box">
-                            <figure>
-                                <span class="item-hover">
-                                    <span class="overlay dark-5"></span>
-                                    <span class="inner">
-
-                                        <!-- lightbox -->
-                                        <a class="ico-rounded lightbox"
-                                            href="/website/demo_files/images/mockups/1200x800/7-min.jpg"
-                                            data-plugin-options='{"type":"image"}'>
-                                            <span class="fa fa-plus fs-20"></span>
-                                        </a>
-
-                                        <!-- details -->
-                                        <a class="ico-rounded" href="portfolio-single-slider.html">
-                                            <span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-                                        </a>
-
-                                    </span>
-                                </span>
-
-                                <img class="img-fluid" src="/website/demo_files/images/mockups/600x399/7-min.jpg"
-                                    width="600" height="399" alt="">
-                            </figure>
-
-                            <div class="item-box-desc">
-                                <h3>Architect Project</h3>
-                                <ul class="list-inline categories m-0">
-                                    <li><a href="#">Architecture</a></li>
-                                    <li><a href="#">Design</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- /item -->
-
-                        <!-- item -->
-                        <div class="item-box">
-                            <figure>
-                                <span class="item-hover">
-                                    <span class="overlay dark-5"></span>
-                                    <span class="inner">
-
-                                        <!-- lightbox -->
-                                        <a class="ico-rounded lightbox"
-                                            href="/website/demo_files/images/mockups/1200x800/8-min.jpg"
-                                            data-plugin-options='{"type":"image"}'>
-                                            <span class="fa fa-plus fs-20"></span>
-                                        </a>
-
-                                        <!-- details -->
-                                        <a class="ico-rounded" href="portfolio-single-slider.html">
-                                            <span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-                                        </a>
-
-                                    </span>
-                                </span>
-
-                                <img class="img-fluid" src="/website/demo_files/images/mockups/600x399/8-min.jpg"
-                                    width="600" height="399" alt="">
-                            </figure>
-
-                            <div class="item-box-desc">
-                                <h3>Architect Project</h3>
-                                <ul class="list-inline categories m-0">
-                                    <li><a href="#">Architecture</a></li>
-                                    <li><a href="#">Design</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- /item -->
-
-                        <!-- item -->
-                        <div class="item-box">
-                            <figure>
-                                <span class="item-hover">
-                                    <span class="overlay dark-5"></span>
-                                    <span class="inner">
-
-                                        <!-- lightbox -->
-                                        <a class="ico-rounded lightbox"
-                                            href="/website/demo_files/images/mockups/1200x800/9-min.jpg"
-                                            data-plugin-options='{"type":"image"}'>
-                                            <span class="fa fa-plus fs-20"></span>
-                                        </a>
-
-                                        <!-- details -->
-                                        <a class="ico-rounded" href="portfolio-single-slider.html">
-                                            <span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-                                        </a>
-
-                                    </span>
-                                </span>
-
-                                <img class="img-fluid" src="/website/demo_files/images/mockups/600x399/9-min.jpg"
-                                    width="600" height="399" alt="">
-                            </figure>
-
-                            <div class="item-box-desc">
-                                <h3>Architect Project</h3>
-                                <ul class="list-inline categories m-0">
-                                    <li><a href="#">Architecture</a></li>
-                                    <li><a href="#">Design</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- /item -->
-
-                        <!-- item -->
-                        <div class="item-box">
-                            <figure>
-                                <span class="item-hover">
-                                    <span class="overlay dark-5"></span>
-                                    <span class="inner">
-
-                                        <!-- lightbox -->
-                                        <a class="ico-rounded lightbox"
-                                            href="/website/demo_files/images/mockups/1200x800/10-min.jpg"
-                                            data-plugin-options='{"type":"image"}'>
-                                            <span class="fa fa-plus fs-20"></span>
-                                        </a>
-
-                                        <!-- details -->
-                                        <a class="ico-rounded" href="portfolio-single-slider.html">
-                                            <span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-                                        </a>
-
-                                    </span>
-                                </span>
-
-                                <img class="img-fluid" src="/website/demo_files/images/mockups/600x399/10-min.jpg"
-                                    width="600" height="399" alt="">
-                            </figure>
-
-                            <div class="item-box-desc">
-                                <h3>Architect Project</h3>
-                                <ul class="list-inline categories m-0">
-                                    <li><a href="#">Architecture</a></li>
-                                    <li><a href="#">Design</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- /item -->
-
-                    </div>
+                <div class="owl-carousel text-center owl-mini-testimonial m-0"
+                    data-plugin-options='{"singleItem": true, "autoPlay": 3000, "navigation": false, "pagination": true, "transitionStyle":"fadeUp"}'>
+                    <blockquote class="quote">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales
+                            sed, dignissim pretium nunc.</p>
+                        <cite>Albert Einstein</cite>
+                    </blockquote>
+                    <blockquote class="quote">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales
+                            sed,
+                            dignissim pretium nunc.</p>
+                        <cite>Roberto Carlos</cite>
+                    </blockquote>
                 </div>
-
             </div>
         </div>
         <div class="divider divider-dotted"><!-- divider --></div>
@@ -834,13 +528,13 @@
         </svg>
 
         <!--
-                                                                Available Classes/Colors
-                                                                    .cart-visual-warning
-                                                                    .cart-visual-info
-                                                                    .cart-visual-success
-                                                                    .cart-visual-danger
-                                                                    .cart-visual-default
-                                                            -->
+                                                                                                                                                                                                Available Classes/Colors
+                                                                                                                                                                                                    .cart-visual-warning
+                                                                                                                                                                                                    .cart-visual-info
+                                                                                                                                                                                                    .cart-visual-success
+                                                                                                                                                                                                    .cart-visual-danger
+                                                                                                                                                                                                    .cart-visual-default
+                                                                                                                                                                                            -->
         <div class="clearfix mt-60 cart-visual cart-visual-warning">
 
             <svg id="cart-visual-svg-1" height="0" width="100%" preserveAspectRatio="none" version="1.1"

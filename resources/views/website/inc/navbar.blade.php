@@ -24,7 +24,7 @@
 
     Example Usage:  class="clearfix sticky header-sm transparent b-0"
 -->
-<div id="header" class="navbar-toggleable-md sticky clearfix shadow-after-1">
+<div id="header" class="navbar-toggleable-md sticky clearfix shadow-before-1">
 
     <!-- SEARCH HEADER -->
     <div class="search-box over-header">
