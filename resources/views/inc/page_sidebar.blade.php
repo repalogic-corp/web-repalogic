@@ -39,7 +39,7 @@
         </div>
         <ul id="js-nav-menu" class="nav-menu">
             <li class="{{ Request::is('/') ? 'active' : '' }}">
-                <a href="/" title="Dashboard" data-filter-tags="application dashboard">
+                <a href="/dashboard-admin" title="Dashboard" data-filter-tags="application dashboard">
                     <i class="fal fa-home"></i>
                     <span class="nav-link-text" data-i18n="nav.application_dashboard">Dashboard</span>
                 </a>

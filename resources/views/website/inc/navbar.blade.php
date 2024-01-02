@@ -58,7 +58,7 @@
             <div class="navbar-collapse collapse float-right nav-main-collapse">
                 <nav class="nav-main">
                     <ul id="topMain" class="nav nav-pills nav-main nav-animate-flipInY hover-animate-bounceIn">
-                        <li><a href="index.php">Beranda</a></li>
+                        <li><a href="/">Beranda</a></li>
                         <li class="dropdown menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
                             <a class="dropdown-toggle" href="#">My Schools</a>
                             <ul class="dropdown-menu">
@@ -92,7 +92,7 @@
                                 <li><a href="/galery">Galery</a></li>
                                 <li><a href="/go-blog">Go Blog</a></li>
                             </ul>
-                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/dashboard-admin">About Us</a></li>
                         <!--
                         MENU ANIMATIONS
                         .nav-animate-fadeIn

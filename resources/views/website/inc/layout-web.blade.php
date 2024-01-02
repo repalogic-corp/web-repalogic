@@ -25,7 +25,7 @@
   data-background="/website/assets/images/_smarty/boxed_background/1.jpg"
  -->
 
-<body class="smoothscroll enable-animation">
+<body class="smoothscroll enable-animation enable-materialdesign">
     <!-- wrapper -->
     <div id="wrapper">
         <!-- Top Bar -->

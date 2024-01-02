@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::fallback([ErrorController::class, 'index']);
 
-Route::get('/websakola', [WebSiteSakolaController::class, 'index'])->name('web_sakola');
+Route::get('/', [WebSiteSakolaController::class, 'index'])->name('web_sakola');
 
 require __DIR__ . '/web-admin.php';
 require __DIR__ . '/web-temp.php';

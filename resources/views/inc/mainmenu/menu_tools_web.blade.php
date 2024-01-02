@@ -56,8 +56,8 @@
         <span class="nav-link-text" data-i18n="nav.manajemen_website">Manajemen Website</span>
     </a>
     <ul>
-        <li class="{{ Request::is('websakola') ? 'active' : '' }}">
-            <a href="/websakola" title="Profil Aplikasi" data-filter-tags="web dashboard">
+        <li class="{{ Request::is('/') ? 'active' : '' }}">
+            <a href="/" title="Profil Aplikasi" data-filter-tags="web dashboard">
                 <span class="nav-link-text" data-i18n="nav.web_dashboard_web">Dashboard Web</span>
             </a>
         </li>

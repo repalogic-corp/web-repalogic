@@ -3,8 +3,8 @@
 @section('css_link')
     <!-- LAYER SLIDER -->
     <link href="/website/assets/plugins/slider.layerslider/css/layerslider.css" rel="stylesheet" type="text/css" />
-    <!-- REVOLUTION SLIDER -->
 
+    <!-- REVOLUTION SLIDER -->
     <link href="/website/assets/plugins/slider.revolution.v5/css/pack.css" rel="stylesheet" type="text/css" />
     <link href="/website/assets/plugins/slider.revolution.v5/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet"
         type="text/css" />
@@ -25,7 +25,6 @@
         </div>
 
     </div>
-
 
     <div class="container mt-50 mb-100">
         <!-- H3 -->
@@ -105,227 +104,82 @@
     <!-- CALLOUT -->
     <section class="callout-dark heading-title heading-arrow-bottom">
         <div class="container">
-
             <div class="text-center">
                 <h3 class="fs-30">Smarty Multipurpose Responsive Template</h3>
                 <p>We can't solve problems by using the same kind of thinking we used when we created them.</p>
             </div>
-
         </div>
     </section>
     <!-- /CALLOUT -->
 
-    <!-- -->
-    <section>
-        <div class="container">
-
-            <!-- -->
-            <article class="row">
-                <div class="col-md-6">
-                    <!-- OWL SLIDER -->
-                    <div class="owl-carousel buttons-autohide controlls-over m-0"
-                        data-plugin-options='{"items": 1, "autoHeight": true, "navigation": true, "pagination": true, "transitionStyle":"backSlide", "progressBar":"true"}'>
-                        <div>
-                            <img class="img-fluid" src="/website/demo_files/images/mockups/800x553/18-min.jpg"
-                                alt="">
-                        </div>
-                        <div>
-                            <img class="img-fluid" src="/website/demo_files/images/mockups/800x553/17-min.jpg"
-                                alt="">
-                        </div>
-                        <div>
-                            <img class="img-fluid" src="/website/demo_files/images/mockups/800x553/3-min.jpg"
-                                alt="">
-                        </div>
-                        <div>
-                            <img class="img-fluid" src="/website/demo_files/images/mockups/800x553/2-min.jpg"
-                                alt="">
-                        </div>
+    <div class="container mt-100">
+        <article class="row">
+            <div class="col-md-6">
+                <!-- OWL SLIDER -->
+                <div class="owl-carousel buttons-autohide controlls-over m-0"
+                    data-plugin-options='{"items": 1, "autoHeight": true, "navigation": true, "pagination": true, "transitionStyle":"backSlide", "progressBar":"true"}'>
+                    <div><img class="img-fluid" src="/website/demo_files/images/mockups/800x553/18-min.jpg" alt="">
                     </div>
-                    <!-- /OWL SLIDER -->
-                </div>
-                <div class="col-md-6">
-                    <h3>Smarty : Four Areas of Expertise</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium, totam rem aperiam.</p>
-
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur magni dolores eos qui ratione voluptatem.</p>
-
-                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                        velit.
-                    </p>
-
-                    <p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur
-                        magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-
-                </div>
-            </article>
-            <!-- / -->
-
-        </div>
-    </section>
-    <!-- / -->
-
-    <!-- -->
-    <section>
-        <div class="container">
-
-            <div class="row">
-
-                <!-- toggle -->
-                <div class="col-md-4 col-sm-4">
-                    <div class="toggle toggle-accordion toggle-transparent toggle-bordered-full">
-
-                        <div class="toggle active">
-                            <label>Lorem ipsum dolor.</label>
-                            <div class="toggle-content">
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="toggle">
-                            <label>Sit amet, consectetur.</label>
-                            <div class="toggle-content">
-                                <p>Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc.</p>
-                            </div>
-                        </div>
-
-                        <div class="toggle">
-                            <label>Consectetur adipiscing elit.</label>
-                            <div class="toggle-content">
-                                <p>Ut enim massa, sodales tempor convallis et, iaculis ac massa.</p>
-                            </div>
-                        </div>
-
+                    <div><img class="img-fluid" src="/website/demo_files/images/mockups/800x553/17-min.jpg" alt="">
+                    </div>
+                    <div><img class="img-fluid" src="/website/demo_files/images/mockups/800x553/3-min.jpg" alt="">
+                    </div>
+                    <div><img class="img-fluid" src="/website/demo_files/images/mockups/800x553/2-min.jpg" alt="">
                     </div>
                 </div>
-                <!-- /toggle -->
+                <!-- /OWL SLIDER -->
+            </div>
+            <div class="col-md-6">
+                <h3>Smarty : Four Areas of Expertise</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, totam rem aperiam.</p>
 
-                <!-- skills -->
-                <div class="col-md-4 col-sm-4">
-                    <h4>Our Skills</h4>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                    consequuntur magni dolores eos qui ratione voluptatem.</p>
 
-                    <label>
-                        <span class="float-right">60%</span>
-                        MARKETING
-                    </label>
-                    <div class="progress progress-xxs">
-                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 60%; min-width: 2em;"></div>
-                    </div>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                    velit.
+                </p>
 
-                    <label>
-                        <span class="float-right">88%</span>
-                        SALES
-                    </label>
-                    <div class="progress progress-xxs">
-                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 88%; min-width: 2em;"></div>
-                    </div>
-
-                    <label>
-                        <span class="float-right">93%</span>
-                        DESIGN
-                    </label>
-                    <div class="progress progress-xxs">
-                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 93%; min-width: 2em;"></div>
-                    </div>
-
-                    <label>
-                        <span class="float-right">77%</span>
-                        DEVELOPMENT
-                    </label>
-                    <div class="progress progress-xxs">
-                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 77%; min-width: 2em;"></div>
-                    </div>
-
-                    <label>
-                        <span class="float-right">99%</span>
-                        OTHER
-                    </label>
-                    <div class="progress progress-xxs">
-                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 99%; min-width: 2em;"></div>
-                    </div>
-
-                </div>
-                <!-- /skills -->
-
-                <!-- recent news -->
-                <div class="col-md-4 col-sm-4">
-                    <h4>Recent News</h4>
-
-                    <div class="row tab-post"><!-- post -->
-                        <div class="col-md-2 col-sm-2 col-2">
-                            <a href="blog-sidebar-left.html">
-                                <img src="demo_files/images/people/300x300/1-min.jpg" width="50" alt="" />
-                            </a>
-                        </div>
-                        <div class="col-md-10 col-sm-10 col-10">
-                            <a href="blog-sidebar-left.html" class="tab-post-link">Maecenas metus nulla</a>
-                            <small>June 29 2014</small>
-                        </div>
-                    </div><!-- /post -->
-
-                    <div class="row tab-post"><!-- post -->
-                        <div class="col-md-2 col-sm-2 col-2">
-                            <a href="blog-sidebar-left.html">
-                                <img src="demo_files/images/people/300x300/2-min.jpg" width="50" alt="" />
-                            </a>
-                        </div>
-                        <div class="col-md-10 col-sm-10 col-10">
-                            <a href="blog-sidebar-left.html" class="tab-post-link">Curabitur pellentesque
-                                neque
-                                eget</a>
-                            <small>June 29 2014</small>
-                        </div>
-                    </div><!-- /post -->
-
-                    <div class="row tab-post"><!-- post -->
-                        <div class="col-md-2 col-sm-2 col-2">
-                            <a href="blog-sidebar-left.html">
-                                <img src="demo_files/images/people/300x300/3-min.jpg" width="50" alt="" />
-                            </a>
-                        </div>
-                        <div class="col-md-10 col-sm-10 col-10">
-                            <a href="blog-sidebar-left.html" class="tab-post-link">Nam et lacus neque. Ut enim
-                                massa</a>
-                            <small>June 29 2014</small>
-                        </div>
-                    </div><!-- /post -->
-
-                </div>
-                <!-- /recent news -->
+                <p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                    consequuntur
+                    magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
 
             </div>
+        </article>
+    </div>
 
+    <div class="container mt-50">
+        <div class="heading-title heading-dotted text-center">
+            <h3>Yu cari tahu.. <span>Konsentrasi Keahlian</span></h3>
         </div>
-    </section>
-    <!-- / -->
 
+    </div>
 
     <div class="container mt-50">
         <div class="heading-title heading-dotted text-center">
             <h3>H3 Heading <span>Center Dotted</span></h3>
         </div>
         <div class="row">
-
             <div class="col-md-4">
-
                 <div class="heading-title heading-border-bottom heading-color">
                     <h3>Passion</h3>
                 </div>
-
+                <div class="owl-carousel buttons-autohide controlls-over"
+                    data-plugin-options='{"singleItem": true, "autoPlay": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+                    <div>
+                        <img class="img-fluid" src="/website/demo_files/images/1200x800/16-min.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/website/demo_files/images/1200x800/17-min.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/website/demo_files/images/1200x800/18-min.jpg" alt="">
+                    </div>
+                </div>
                 <p>Fabulas definitiones ei pri per recteque hendrerit scriptorem in errem scribentur mel
                     fastidii
                     propriae philosophia cu mea. Utinam ipsum everti necessitatibus at fuisset splendide.</p>
-
                 <a href="#">
                     Read
                     <!-- /word rotator -->
@@ -339,15 +193,25 @@
                 </a>
 
             </div>
-
             <div class="col-md-4">
                 <div class="heading-title heading-border-bottom heading-color">
                     <h3>Precision</h3>
                 </div>
+                <div class="owl-carousel buttons-autohide controlls-over"
+                    data-plugin-options='{"singleItem": true, "autoPlay": true, "navigation": true, "pagination": true, "transitionStyle":"backSlide"}'>
+                    <div>
+                        <img class="img-fluid" src="/website/demo_files/images/1200x800/8-min.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/website/demo_files/images/1200x800/9-min.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/website/demo_files/images/1200x800/10-min.jpg" alt="">
+                    </div>
+                </div>
                 <p>Fabulas definitiones ei pri per recteque hendrerit scriptorem in errem scribentur mel
                     fastidii
                     propriae philosophia cu mea. Utinam ipsum everti necessitatibus at fuisset splendide.</p>
-
                 <a href="#">
                     Read
                     <!-- /word rotator -->
@@ -359,12 +223,22 @@
                     </span><!-- /word rotator -->
                     <i class="glyphicon glyphicon-menu-right fs-12"></i>
                 </a>
-
             </div>
-
             <div class="col-md-4">
                 <div class="heading-title heading-border-bottom heading-color">
                     <h3>Simplicity</h3>
+                </div>
+                <div class="owl-carousel buttons-autohide controlls-over"
+                    data-plugin-options='{"singleItem": true, "autoPlay": true, "navigation": true, "pagination": true, "transitionStyle":"goDown"}'>
+                    <div>
+                        <img class="img-fluid" src="/website/demo_files/images/1200x800/11-min.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/website/demo_files/images/1200x800/12-min.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/website/demo_files/images/1200x800/13-min.jpg" alt="">
+                    </div>
                 </div>
                 <p>Fabulas definitiones ei pri per recteque hendrerit scriptorem in errem scribentur mel
                     fastidii
@@ -502,12 +376,14 @@
                 <div class="owl-carousel text-center owl-mini-testimonial m-0"
                     data-plugin-options='{"singleItem": true, "autoPlay": 3000, "navigation": false, "pagination": true, "transitionStyle":"fadeUp"}'>
                     <blockquote class="quote">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a
+                            sodales
                             sed, dignissim pretium nunc.</p>
                         <cite>Albert Einstein</cite>
                     </blockquote>
                     <blockquote class="quote">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a
+                            sodales
                             sed,
                             dignissim pretium nunc.</p>
                         <cite>Roberto Carlos</cite>
@@ -528,13 +404,13 @@
         </svg>
 
         <!--
-                                                                                                                                                                                                Available Classes/Colors
-                                                                                                                                                                                                    .cart-visual-warning
-                                                                                                                                                                                                    .cart-visual-info
-                                                                                                                                                                                                    .cart-visual-success
-                                                                                                                                                                                                    .cart-visual-danger
-                                                                                                                                                                                                    .cart-visual-default
-                                                                                                                                                                                            -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Available Classes/Colors
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .cart-visual-warning
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .cart-visual-info
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .cart-visual-success
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .cart-visual-danger
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .cart-visual-default
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                -->
         <div class="clearfix mt-60 cart-visual cart-visual-warning">
 
             <svg id="cart-visual-svg-1" height="0" width="100%" preserveAspectRatio="none" version="1.1"

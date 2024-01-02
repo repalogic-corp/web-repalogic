@@ -60,7 +60,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [DashboardAdminController::class, 'index'])->name('beranda');
+Route::get('/dashboard-admin', [DashboardAdminController::class, 'index'])->name('dashboard_admin');
 
 Route::get('/ak-tahunajar', [AkTahunAjarSemesterController::class, 'index'])->name('tahu_najar');
 Route::get('/ak-profil-sekolah', [AkProfilSekolahController::class, 'index'])->name('profil_sekolah');
