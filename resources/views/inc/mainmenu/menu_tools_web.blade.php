@@ -71,6 +71,11 @@
                 <span class="nav-link-text" data-i18n="nav.web_pengumuman">Pengumuman</span>
             </a>
         </li>
+        <li class="{{ Request::is('web-kepegawaian') ? 'active' : '' }}">
+            <a href="/web-kepegawaian" title="Kepegawaian" data-filter-tags="web kepegawaian">
+                <span class="nav-link-text" data-i18n="nav.web_kepegawaian">Kepegawaian</span>
+            </a>
+        </li>
         <li class="{{ Request::is('web-kesiswaan') ? 'active' : '' }}">
             <a href="/web-kesiswaan" title="Kesiswaan" data-filter-tags="web kesiswaan">
                 <span class="nav-link-text" data-i18n="nav.web_kesiswaan">Kesiswaan</span>

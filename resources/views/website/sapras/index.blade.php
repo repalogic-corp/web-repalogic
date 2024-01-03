@@ -6,7 +6,7 @@
         <div class="subheader">
             @component('inc.subheader', ['subheader_title' => 'st_type_2'])
                 @slot('sh_icon')
-                    bullhorn
+                    warehouse-alt
                 @endslot
                 @slot('sh_descipt')
                     A brief introduction to this WebApp

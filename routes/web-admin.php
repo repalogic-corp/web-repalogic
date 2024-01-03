@@ -56,7 +56,14 @@ use App\Http\Controllers\ToolsEksporController;
 use App\Http\Controllers\ToolsImporController;
 use App\Http\Controllers\ToolsStatistikDataController;
 
-
+//website
+use App\Http\Controllers\WebPengumumanController;
+use App\Http\Controllers\WebKepegawaianController;
+use App\Http\Controllers\WebKesiswaanController;
+use App\Http\Controllers\WebSaranaPrasaranaController;
+use App\Http\Controllers\WebAgendaKegiatanController;
+use App\Http\Controllers\WebBlogController;
+use App\Http\Controllers\WebGaleriController;
 
 
 
@@ -130,3 +137,12 @@ Route::get('/tools-opsi-aplikasi', [ToolsOpsiAplikasiController::class, 'index']
 Route::get('/tools-ekspor', [ToolsEksporController::class, 'index'])->name('t_ekspor');
 Route::get('/tools-impor', [ToolsImporController::class, 'index'])->name('t_impor');
 Route::get('/tools-statistik-data', [ToolsStatistikDataController::class, 'index'])->name('t_statistik');
+
+//website
+Route::get('/web-pengumuman', [WebPengumumanController::class, 'index'])->name('pengumuman');
+Route::get('/web-kepegawaian', [WebKepegawaianController::class, 'index'])->name('kepegawaian');
+Route::get('/web-kesiswaan', [WebKesiswaanController::class, 'index'])->name('kesiswaan');
+Route::get('/web-sarana-prasarana', [WebSaranaPrasaranaController::class, 'index'])->name('sapras');
+Route::get('/web-agenda-kegiatan', [WebAgendaKegiatanController::class, 'index'])->name('agenda');
+Route::get('/web-blog', [WebBlogController::class, 'index'])->name('blog');
+Route::get('/web-galeri', [WebGaleriController::class, 'index'])->name('galeri');
