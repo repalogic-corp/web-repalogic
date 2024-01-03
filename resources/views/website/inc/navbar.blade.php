@@ -53,7 +53,7 @@
                                 <li><a href="/galery">Galery</a></li>
                                 <li><a href="/go-blog">Go Blog</a></li>
                             </ul>
-                        <li><a href="/dashboard-admin">About Us</a></li>
+                        <li><a href="/about-us">About Us</a></li>
                     </ul>
                 </nav>
             </div>

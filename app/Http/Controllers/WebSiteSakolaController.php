@@ -27,7 +27,58 @@ class WebSiteSakolaController extends Controller
     {
         return view('website.dashboard.prodi');
     }
+    public function sapras()
+    {
+        return view('website.dashboard.sapras');
+    }
 
+    public function guru()
+    {
+        return view('website.dashboard.guru');
+    }
+    public function tatausaha()
+    {
+        return view('website.dashboard.tatausaha');
+    }
+    public function wakasek()
+    {
+        return view('website.dashboard.wakasek');
+    }
+    public function kaprodi()
+    {
+        return view('website.dashboard.kaprodi');
+    }
+    public function walikelas()
+    {
+        return view('website.dashboard.walikelas');
+    }
+
+    public function osis()
+    {
+        return view('website.dashboard.osis');
+    }
+    public function eskul()
+    {
+        return view('website.dashboard.eskul');
+    }
+
+    public function event()
+    {
+        return view('website.dashboard.event');
+    }
+    public function galeri()
+    {
+        return view('website.dashboard.galeri');
+    }
+    public function goblog()
+    {
+        return view('website.dashboard.goblog');
+    }
+
+    public function about()
+    {
+        return view('website.dashboard.about');
+    }
 
     /**
      * Show the form for creating a new resource.
