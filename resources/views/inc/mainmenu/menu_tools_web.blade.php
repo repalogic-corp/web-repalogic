@@ -37,9 +37,14 @@
                 <span class="nav-link-text" data-i18n="nav.tools_opsi_aplikasi">Opsi Aplikasi</span>
             </a>
         </li>
-        <li class="{{ Request::is('tools-ekspor-impor') ? 'active' : '' }}">
-            <a href="/tools-ekspor-impor" title="Ekspor Impor" data-filter-tags="tools ekspor impor">
-                <span class="nav-link-text" data-i18n="nav.tools_ekspor_impor">Ekspor Impor</span>
+        <li class="{{ Request::is('tools-ekspor') ? 'active' : '' }}">
+            <a href="/tools-ekspor" title="Ekspor" data-filter-tags="tools ekspor">
+                <span class="nav-link-text" data-i18n="nav.tools_ekspor">Ekspor</span>
+            </a>
+        </li>
+        <li class="{{ Request::is('tools-impor') ? 'active' : '' }}">
+            <a href="/tools-impor" title="Impor" data-filter-tags="tools impor">
+                <span class="nav-link-text" data-i18n="nav.tools_impor">Impor</span>
             </a>
         </li>
         <li class="{{ Request::is('tools-statistik-data') ? 'active' : '' }}">
@@ -89,11 +94,6 @@
         <li class="{{ Request::is('web-galeri') ? 'active' : '' }}">
             <a href="/web-galeri" title="Galeri" data-filter-tags="web galeri">
                 <span class="nav-link-text" data-i18n="nav.web_galeri">Galeri</span>
-            </a>
-        </li>
-        <li class="{{ Request::is('web-catatan-personal') ? 'active' : '' }}">
-            <a href="/web-catatan-personal" title="Catatan Personal" data-filter-tags="web catatan personal">
-                <span class="nav-link-text" data-i18n="nav.web_catatan_personal">Statistik Data</span>
             </a>
         </li>
     </ul>

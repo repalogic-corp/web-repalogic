@@ -8,21 +8,21 @@
                 <img class="footer-logo" src="/website/assets/images/_smarty/logo-footer.png" alt="" />
 
                 <!-- Small Description -->
-                <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                <p>Sekolah Menengah Kejuruan berbasis ramah anak dan inklusif</p>
 
                 <!-- Contact Address -->
                 <address>
                     <ul class="list-unstyled">
                         <li class="footer-sprite address">
-                            PO Box 21132<br>
-                            Here Weare St, Melbourne<br>
-                            Vivas 2355 Australia<br>
+                            Jl. Siliwangi No. 30<br>
+                            Desa Liangjulang Kec. Kadipaten<br>
+                            Kab. Majalengka Jawa Barat 45452<br>
                         </li>
                         <li class="footer-sprite phone">
-                            Phone: 1-800-565-2390
+                            Phone: 0233661434
                         </li>
                         <li class="footer-sprite email">
-                            <a href="mailto:support@yourname.com">support@yourname.com</a>
+                            <a href="mailto:admin@smkn1kadipaten.sch.id">admin@smkn1kadipaten.sch.id</a>
                         </li>
                     </ul>
                 </address>

@@ -3,7 +3,6 @@
 @section('css_link')
     <!-- LAYER SLIDER -->
     <link href="/website/assets/plugins/slider.layerslider/css/layerslider.css" rel="stylesheet" type="text/css" />
-
     <!-- REVOLUTION SLIDER -->
     <link href="/website/assets/plugins/slider.revolution.v5/css/pack.css" rel="stylesheet" type="text/css" />
     <link href="/website/assets/plugins/slider.revolution.v5/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet"
@@ -13,21 +12,22 @@
     <link href="http://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet" property="stylesheet" type="text/css"
         media="all">
 @endsection
+
 @section('content-web')
+    @include('website.inc.slide_03')
     <!-- /LAYER SLIDER -->
     <div class="container mt-50">
-
         <div class="text-center">
             <h1>Welcome! Website <span>SMKN 1 KADIPATEN</span>.</h1>
-            <h2 class="col-sm-10 offset-sm-1 mb-0 fw-400">Salah satu Sekolah Menengah Kejuruan di Kabupaten
+            <h2 class="col-sm-10 offset-sm-1 mb-0 fw-400">
+                Salah satu Sekolah Menengah Kejuruan di Kabupaten
                 Majalengka yang Berbasis Ramah Anak dan
-                Inklusif</h2>
+                Inklusif
+            </h2>
         </div>
-
     </div>
 
     <div class="container mt-50 mb-100">
-        <!-- H3 -->
         <div class="heading-title heading-dotted text-center">
             <h3>Sambutan <span>Kepala Sekolah</span></h3>
         </div>
@@ -394,23 +394,16 @@
         <div class="divider divider-dotted"><!-- divider --></div>
     </div>
     <!-- VISUAL CHART -->
-    <section class="pt-0" style="background-color:#fbfbfb">
-
-        <!-- top curved -->
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            style="fill:#ffffff;padding:0;margin:0;display:block;position:relative;z-index:100;">
-            <path d="M0 0 C55 180 100 0 100 0 Z"></path>
-        </svg>
+    <section class="bb-0">
 
         <!--
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Available Classes/Colors
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .cart-visual-warning
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .cart-visual-info
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .cart-visual-success
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .cart-visual-danger
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        .cart-visual-default
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                -->
+             Available Classes/Colors
+              .cart-visual-warning
+              .cart-visual-info
+              .cart-visual-success
+              .cart-visual-danger
+              .cart-visual-default
+            -->
         <div class="clearfix mt-60 cart-visual cart-visual-warning">
 
             <svg id="cart-visual-svg-1" height="0" width="100%" preserveAspectRatio="none" version="1.1"
@@ -484,6 +477,14 @@
         </div>
     </section>
     <!-- /VISUAL CHART -->
+    <!-- BUTTON CALLOUT -->
+    <a href="#purchase" rel="nofollow" target="_blank" class="btn btn-xlg btn-warning fs-20 fullwidth m-0 rad-0 p-40">
+        <span class="font-lato fs-30">
+            Did Smarty convinced you?
+            <strong>Purchase now &raquo;</strong>
+        </span>
+    </a>
+    <!-- /BUTTON CALLOUT -->
 @endsection
 @section('plugin')
 

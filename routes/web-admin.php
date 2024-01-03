@@ -46,6 +46,22 @@ use App\Http\Controllers\WkRaporController;
 
 use App\Http\Controllers\BimbinganKarirController;
 
+//tools
+use App\Http\Controllers\ToolsProfilAplikasiController;
+use App\Http\Controllers\ToolsJenisJabatanController;
+use App\Http\Controllers\ToolsJenisEskulController;
+use App\Http\Controllers\ToolsManajemenUsersController;
+use App\Http\Controllers\ToolsOpsiAplikasiController;
+use App\Http\Controllers\ToolsEksporController;
+use App\Http\Controllers\ToolsImporController;
+use App\Http\Controllers\ToolsStatistikDataController;
+
+
+
+
+
+
+
 
 use Illuminate\Support\Facades\Route;
 
@@ -104,3 +120,13 @@ Route::get('/wk-catatan-siswa', [WkCatatanController::class, 'index'])->name('wk
 Route::get('/wk-raport-siswa', [WkRaporController::class, 'index'])->name('wk_raport_siswa');
 
 Route::get('/bp-bk', [BimbinganKarirController::class, 'index'])->name('bpbk');
+
+//tools
+Route::get('/tools-profil-aplikasi', [ToolsProfilAplikasiController::class, 'index'])->name('t_profil_app');
+Route::get('/tools-data-jabatan', [ToolsJenisJabatanController::class, 'index'])->name('t_jenis_jab');
+Route::get('/tools-data-eskul', [ToolsJenisEskulController::class, 'index'])->name('t_jenis_eskul');
+Route::get('/tools-manajemen-users', [ToolsManajemenUsersController::class, 'index'])->name('t_manajemen_user');
+Route::get('/tools-opsi-aplikasi', [ToolsOpsiAplikasiController::class, 'index'])->name('t_opsi_app');
+Route::get('/tools-ekspor', [ToolsEksporController::class, 'index'])->name('t_ekspor');
+Route::get('/tools-impor', [ToolsImporController::class, 'index'])->name('t_impor');
+Route::get('/tools-statistik-data', [ToolsStatistikDataController::class, 'index'])->name('t_statistik');

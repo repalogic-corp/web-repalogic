@@ -1,58 +1,19 @@
-<!--
-    AVAILABLE HEADER CLASSES
-
-    Default nav height: 96px
-    .header-md 		= 70px nav height
-    .header-sm 		= 60px nav height
-
-    .b-0 		= remove bottom border (only with transparent use)
-    .transparent	= transparent header
-    .translucent	= translucent header
-    .sticky			= sticky header
-    .static			= static header
-    .dark			= dark header
-    .bottom			= header on bottom
-
-    shadow-before-1 = shadow 1 header top
-    shadow-after-1 	= shadow 1 header bottom
-    shadow-before-2 = shadow 2 header top
-    shadow-after-2 	= shadow 2 header bottom
-    shadow-before-3 = shadow 3 header top
-    shadow-after-3 	= shadow 3 header bottom
-
-    .clearfix		= required for mobile menu, do not remove!
-
-    Example Usage:  class="clearfix sticky header-sm transparent b-0"
--->
 <div id="header" class="navbar-toggleable-md sticky clearfix shadow-before-1">
-
-    <!-- SEARCH HEADER -->
     <div class="search-box over-header">
         <a id="closeSearch" href="#" class="fa fa-remove"></a>
         <form action="page-search-result-1.html" method="get">
             <input type="text" class="form-control" placeholder="SEARCH" />
         </form>
     </div>
-    <!-- /SEARCH HEADER -->
-
-    <!-- TOP NAV -->
     <header id="topNav">
         <div class="container">
-            <!-- Mobile Menu Button -->
             <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
                 <i class="fa fa-bars"></i>
             </button>
-            <!-- BUTTONS -->
             <ul class="float-right nav nav-pills nav-second-main">
-                <!-- SEARCH -->
-                <li class="search">
-                    <a href="javascript:;">
-                        <i class="fa fa-search"></i>
-                    </a>
-                </li>
-                <!-- /SEARCH -->
+                <li class="search"><a href="javascript:;"><i class="fa fa-search"></i></a></li>
             </ul>
-            <a class="logo float-left" href="index.html">
+            <a class="logo float-left" href="/">
                 <img src="/website/assets/images/_smarty/logo_dark.png" alt="" />
             </a>
             <div class="navbar-collapse collapse float-right nav-main-collapse">
@@ -63,8 +24,8 @@
                             <a class="dropdown-toggle" href="#">My Schools</a>
                             <ul class="dropdown-menu">
                                 <li><a href="/sejarah">Sejarah</a></li>
-                                <li><a href="/visi-misi">Visi Misi</a></li>
-                                <li><a href="/program-keahlian">Program Keahlian</a></li>
+                                <li><a href="/visi-misi">Visi Misi Tujuan</a></li>
+                                <li><a href="/konsentrasi-keahlian">Konsentrasi Keahlian</a></li>
                                 <li><a href="/sarana-prasarana">Sarana Prasarana</a></li>
                             </ul>
                         </li>
@@ -93,28 +54,9 @@
                                 <li><a href="/go-blog">Go Blog</a></li>
                             </ul>
                         <li><a href="/dashboard-admin">About Us</a></li>
-                        <!--
-                        MENU ANIMATIONS
-                        .nav-animate-fadeIn
-                        .nav-animate-fadeInUp
-                        .nav-animate-bounceIn
-                        .nav-animate-bounceInUp
-                        .nav-animate-flipInX
-                        .nav-animate-flipInY
-                        .nav-animate-zoomIn
-                        .nav-animate-slideInUp
-
-                        .nav-hover-animate 		= animate text on hover
-
-                        .hover-animate-bounceIn = bounceIn effect on mouse over of main menu
-                        -->
                     </ul>
-
                 </nav>
             </div>
-
         </div>
     </header>
-    <!-- /Top Nav -->
-
 </div>

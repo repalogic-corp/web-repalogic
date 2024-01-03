@@ -13,7 +13,7 @@ class ToolsProfilAplikasiController extends Controller
      */
     public function index()
     {
-        //
+        return view('toolsapp.profil_aplikasi.index');
     }
 
     /**

@@ -15,6 +15,19 @@ class WebSiteSakolaController extends Controller
     {
         return view('website.dashboard.index');
     }
+    public function web_sejarah()
+    {
+        return view('website.dashboard.sejarah');
+    }
+    public function visimisi()
+    {
+        return view('website.dashboard.visimisi');
+    }
+    public function prodi()
+    {
+        return view('website.dashboard.prodi');
+    }
+
 
     /**
      * Show the form for creating a new resource.

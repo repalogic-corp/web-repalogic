@@ -1,5 +1,5 @@
 @extends('inc.layout')
-@section('title', 'Profil')
+@section('title', 'Opsi Aplikasi')
 @section('content')
     <main id="js-page-content" role="main" class="page-content">
         @include('inc.breadcrumb', ['bcrumb' => 'bc_level_dua', 'bc_1' => 'Tools'])

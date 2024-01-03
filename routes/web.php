@@ -19,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 Route::fallback([ErrorController::class, 'index']);
 
 Route::get('/', [WebSiteSakolaController::class, 'index'])->name('web_sakola');
+Route::get('/sejarah', [WebSiteSakolaController::class, 'web_sejarah'])->name('sejarah');
+Route::get('/visi-misi', [WebSiteSakolaController::class, 'visimisi'])->name('visimisi');
+Route::get('/konsentrasi-keahlian', [WebSiteSakolaController::class, 'prodi'])->name('prodi');
 
 require __DIR__ . '/web-admin.php';
 require __DIR__ . '/web-temp.php';

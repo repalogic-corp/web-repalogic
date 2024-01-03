@@ -139,7 +139,8 @@
             <div class="ls-slide" data-ls="slidedelay:8000;transition2d:21,105;timeshift:-1000;">
 
                 <!-- background -->
-                <img src="/website/demo_files/images/blue.jpg" class="ls-bg" alt="Slide background" />
+                <img src="/img/slide/lapanganbasket.jpg" class="ls-bg" alt="Slide background" />
+                {{-- <img src="/website/demo_files/images/blue.jpg" class="ls-bg" alt="Slide background" /> --}}
 
                 <img class="ls-l"
                     data-ls="

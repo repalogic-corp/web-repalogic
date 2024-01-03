@@ -1,8 +1,5 @@
-<!-- Top Bar -->
 <div id="topBar">
     <div class="container">
-
-        <!-- right -->
         <ul class="top-links list-inline float-right">
             <li class="text-welcome hidden-xs-down">Welcome to Smarty, <strong>John Doe</strong></li>
             <li>
@@ -19,7 +16,7 @@
             <li class="hidden-xs-down"><a href="page-register-1.html">REGISTER</a></li>
         </ul>
 
-        <!-- left
+        {{--
         <ul class="top-links list-inline">
             <li class="hidden-xs-down"><a href="page-faq-1.html">FAQ</a></li>
             <li>
@@ -41,8 +38,6 @@
                     <li><a tabindex="-1" href="#">GBP</a></li>
                 </ul>
             </li>
-        </ul>-->
-
+        </ul> --}}
     </div>
 </div>
-<!-- /Top Bar -->
