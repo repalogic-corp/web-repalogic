@@ -37,7 +37,7 @@ Route::get('/event', [WebSiteSakolaController::class, 'event'])->name('event');
 Route::get('/galery', [WebSiteSakolaController::class, 'galeri'])->name('galeri');
 Route::get('/go-blog', [WebSiteSakolaController::class, 'goblog'])->name('goblog');
 
-Route::get('/about-as', [WebSiteSakolaController::class, 'about'])->name('about');
+Route::get('/about-us', [WebSiteSakolaController::class, 'about'])->name('about');
 
 
 require __DIR__ . '/web-admin.php';

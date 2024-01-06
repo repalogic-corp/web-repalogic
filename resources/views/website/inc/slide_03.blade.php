@@ -32,7 +32,7 @@
                 <p class="ls-l"
                     style="top:52%;left:50%;font-weight: 300;font-size:50px;color:#ffffff;white-space: nowrap;"
                     data-ls="offsetxin:-100;durationin:750;delayin:250;easingin:easeOutBack;skewxin:-50;offsetxout:100;durationout:600;showuntil:500;easingout:easeInBack;skewxout:50;">
-                    SMARTY TEMPLATE
+                    SMKN 1 KADIPATEN
                 </p>
 
                 <img class="ls-l"
@@ -90,8 +90,7 @@
                     scaleyin:0.8;
                     scalexout:0.8;
                     scaleyout:0.8;"
-                    style="top:40px;left:65%;white-space: nowrap;" src="/website/demo_files/images/desktop.png"
-                    alt="">
+                    style="top:40px;left:65%;white-space: nowrap; width:25%" src="/guru/kepsek2.png" alt="">
 
                 <p class="ls-l"
                     style="top:50px;left:100px;font-weight: 300;height:40px;p-right:10px;p-left:10px;font-size:30px;line-height:37px;color:#ffffff;background:#fa6b4b;border-radius:4px;white-space: nowrap;"
@@ -258,8 +257,7 @@
                     scaleyin:0.8;
                     scalexout:0.8;
                     scaleyout:0.8;"
-                    style="top:80px;left:50%;white-space: nowrap;"
-                    src="/website/demo_files/images/layerslider/ls5box.png" alt="">
+                    style="top:150px;left:50%;white-space: nowrap;" src="/img/siswa_0006_Layer-6.png" alt="">
             </div>
 
         </div>

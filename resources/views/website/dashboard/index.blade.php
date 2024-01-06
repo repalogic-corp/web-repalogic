@@ -37,7 +37,7 @@
                     <div class="front">
                         <div class="box1 box-default">
                             <div class="box-icon-title">
-                                <img class="img-fluid" src="/guru/kepsek2.png" alt="" />
+                                <img class="img-fluid" src="/img/kepsek2.png" alt="" />
                                 <h2>H. Damudin S.Pd., M.Pd.</h2>
                                 <small>Kepala Sekolah</small>
                             </div>
@@ -112,19 +112,222 @@
     </section>
     <!-- /CALLOUT -->
 
+    <!-- Do Not Miss -->
+    <section id="donotmiss">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-3">
+
+                    <div class="box-static box-border-top">
+                        <div class="box-title">
+                            <h4>Do Not Miss</h4>
+                        </div>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis
+                            dapibus.</p>
+                        <p><small>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+                                venenatis.</small></p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="box-flip box-color box-icon box-icon-center box-icon-round box-icon-large text-center">
+                        <div class="front">
+                            <div class="box1" style="background-color:#a0ce4e;">
+                                <div class="box-icon-title">
+                                    <i class="et-profile-male"></i>
+                                    <h2>Bible Study</h2>
+                                </div>
+                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+                                    venenatis dapibus posuere</p>
+                            </div>
+                        </div>
+
+                        <div class="back">
+                            <div class="box2" style="background-color:#a0ce4e;">
+                                <h4>Bible Study</h4>
+                                <hr />
+                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+                                    venenatis dapibus posuere</p>
+                                <a href="#" class="btn btn-block btn-translucid">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="box-flip box-color box-icon box-icon-center box-icon-round box-icon-large text-center">
+                        <div class="front">
+                            <div class="box1" style="background-color:#cb9536;">
+                                <div class="box-icon-title">
+                                    <i class="et-puzzle"></i>
+                                    <h2>Outserch Ministry</h2>
+                                </div>
+                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+                                    venenatis dapibus posuere</p>
+                            </div>
+                        </div>
+
+                        <div class="back">
+                            <div class="box2" style="background-color:#cb9536;">
+                                <h4>Outserch Ministry</h4>
+                                <hr />
+                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+                                    venenatis dapibus posuere</p>
+                                <a href="#" class="btn btn-block btn-translucid">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="box-flip box-color box-icon box-icon-center box-icon-round box-icon-large text-center">
+                        <div class="front">
+                            <div class="box1" style="background-color:#73b9dc;">
+                                <div class="box-icon-title">
+                                    <i class="et-flag"></i>
+                                    <h2>Teens Camp</h2>
+                                </div>
+                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+                                    venenatis dapibus posuere</p>
+                            </div>
+                        </div>
+
+                        <div class="back">
+                            <div class="box2" style="background-color:#73b9dc;">
+                                <h4>Teens Camp</h4>
+                                <hr />
+                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+                                    venenatis dapibus posuere</p>
+                                <a href="#" class="btn btn-block btn-translucid">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- /Do Not Miss -->
+
+    <!-- Services -->
+    <section class="services">
+        <div class="container">
+            <!--
+             LTR INFO: box-icon-left or box-icon-right - are the same on LTR
+             -->
+            <div class="row">
+
+                <div class="col-sm-4">
+
+                    <div class="box-icon box-icon-left">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-graduation-cap"></i>
+                            <h2>Education Organization</h2>
+                        </a>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis
+                            dapibus posuere velit aliquet.</p>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    <div class="box-icon box-icon-left">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-paper-plane"></i>
+                            <h2>Training Center</h2>
+                        </a>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis
+                            dapibus posuere velit aliquet.</p>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    <div class="box-icon box-icon-left">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-ticket"></i>
+                            <h2>Event Tickets</h2>
+                        </a>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis
+                            dapibus posuere velit aliquet.</p>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    <div class="box-icon box-icon-left">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-shopping-cart"></i>
+                            <h2>Online Shop</h2>
+                        </a>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis
+                            dapibus posuere velit aliquet.</p>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    <div class="box-icon box-icon-left">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-cubes"></i>
+                            <h2>No Limitation</h2>
+                        </a>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis
+                            dapibus posuere velit aliquet.</p>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    <div class="box-icon box-icon-left">
+                        <a class="box-icon-title" href="#">
+                            <i class="fa fa-star"></i>
+                            <h2>Great Support</h2>
+                        </a>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis
+                            dapibus posuere velit aliquet.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- /Services -->
+
     <div class="container mt-100">
         <article class="row">
             <div class="col-md-6">
                 <!-- OWL SLIDER -->
                 <div class="owl-carousel buttons-autohide controlls-over m-0"
                     data-plugin-options='{"items": 1, "autoHeight": true, "navigation": true, "pagination": true, "transitionStyle":"backSlide", "progressBar":"true"}'>
-                    <div><img class="img-fluid" src="/website/demo_files/images/mockups/800x553/18-min.jpg" alt="">
+                    <div><img class="img-fluid" src="/website/demo_files/images/mockups/800x553/18-min.jpg"
+                            alt="">
                     </div>
-                    <div><img class="img-fluid" src="/website/demo_files/images/mockups/800x553/17-min.jpg" alt="">
+                    <div><img class="img-fluid" src="/website/demo_files/images/mockups/800x553/17-min.jpg"
+                            alt="">
                     </div>
-                    <div><img class="img-fluid" src="/website/demo_files/images/mockups/800x553/3-min.jpg" alt="">
+                    <div><img class="img-fluid" src="/website/demo_files/images/mockups/800x553/3-min.jpg"
+                            alt="">
                     </div>
-                    <div><img class="img-fluid" src="/website/demo_files/images/mockups/800x553/2-min.jpg" alt="">
+                    <div><img class="img-fluid" src="/website/demo_files/images/mockups/800x553/2-min.jpg"
+                            alt="">
                     </div>
                 </div>
                 <!-- /OWL SLIDER -->
@@ -397,13 +600,13 @@
     <section class="bb-0">
 
         <!--
-             Available Classes/Colors
-              .cart-visual-warning
-              .cart-visual-info
-              .cart-visual-success
-              .cart-visual-danger
-              .cart-visual-default
-            -->
+                         Available Classes/Colors
+                          .cart-visual-warning
+                          .cart-visual-info
+                          .cart-visual-success
+                          .cart-visual-danger
+                          .cart-visual-default
+                        -->
         <div class="clearfix mt-60 cart-visual cart-visual-warning">
 
             <svg id="cart-visual-svg-1" height="0" width="100%" preserveAspectRatio="none" version="1.1"
