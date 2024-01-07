@@ -12,7 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('ak_tahun_ajar_semesters', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_ta');
+            $table->string('tahunajaran');
+            $table->enum('semester', ['Ganjil', 'Genap']);
+            $table->enum('aktif', ['Y', 'N']);
             $table->timestamps();
         });
     }

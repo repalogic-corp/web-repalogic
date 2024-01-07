@@ -12,7 +12,22 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('ak_profil_sekolahs', function (Blueprint $table) {
-            $table->id();
+            $table->char('npsn', 10)->primary();
+            $table->string('nm_sekolah');
+            $table->enum('status', ['Negeri', 'Swasta']);
+            $table->string('alamat_blok')->nullable();
+            $table->string('alamat_no')->nullable();
+            $table->string('alamat_rt')->nullable();
+            $table->string('alamat_rw')->nullable();
+            $table->string('alamat_desa')->nullable();
+            $table->string('alamat_kec')->nullable();
+            $table->string('alamat_kab')->nullable();
+            $table->string('alamat_provinsi')->nullable();
+            $table->string('alamat_kodepos')->nullable();
+            $table->string('alamat_telepon')->nullable();
+            $table->string('alamat_website')->nullable();
+            $table->string('alamat_email')->nullable();
+            $table->string('logo_sekolah')->nullable();
             $table->timestamps();
         });
     }

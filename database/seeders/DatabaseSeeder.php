@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use Database\Seeders\AkTahunAjarSemesterSeeder;
+use Database\Seeders\AkProgramKeahlianSeeder;
+
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -18,5 +21,11 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        $this->call([
+            AkTahunAjarSemesterSeeder::class,
+            AkProgramKeahlianSeeder::class,
+
+            //Tambahkan seeder lainnya jika ada
+        ]);
     }
 }
