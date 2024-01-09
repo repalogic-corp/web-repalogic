@@ -257,7 +257,7 @@
 @endsection
 @section('plugin')
     <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support -->
-    <script src="/js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
+    <script src="js/notifications/sweetalert2/sweetalert2.bundle.js"></script>
     <script>
         $(document).ready(function() {
 
