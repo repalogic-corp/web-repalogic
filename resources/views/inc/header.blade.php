@@ -15,8 +15,8 @@
 <link id="mythemes" rel="stylesheet" media="screen, print" href="/css/themes/cust-theme-3.css">
 <link id="myskins" rel="stylesheet" media="screen, print" href="/css/skins/skin-master.css">
 <!-- Place favicon.ico in the root directory -->
-<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/topi-toga.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/topi-toga.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/topi-toga-32.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/topi-toga-32.png">
 <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 {{--
 <link rel="stylesheet" media="screen, print" href="/css/miscellaneous/reactions/reactions.css">

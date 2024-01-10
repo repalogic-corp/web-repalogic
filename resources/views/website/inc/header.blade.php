@@ -7,8 +7,8 @@
     <!-- mobile settings -->
     <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/skaone.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/skaone.png">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon/favicon.ico" type="image/x-icon">
 
     <!-- WEB FONTS : use %7C instead of | (pipe) -->
     <link

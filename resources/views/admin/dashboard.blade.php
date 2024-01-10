@@ -15,6 +15,7 @@
             @endcomponent
         </div>
         <x-panel-page>
+            <x-slot name="panel_id">data-guru</x-slot>
             <x-slot name="icon">book</x-slot>
             <x-slot name="title">Data Guru dan Staf Tatusaha</x-slot>
             <x-slot name="paneltoolbar">
@@ -72,6 +73,7 @@
         {{-- Pill Vertikal --}}
 
         <x-panel-page>
+            <x-slot name="panel_id">pill-vertical</x-slot>
             <x-slot name="title">Pill <span class="fw-300"><i>vertical</i></span></x-slot>
             <x-slot name="paneltoolbar">
                 <div class="panel-toolbar ml-2 mr-3">
@@ -140,8 +142,8 @@
                             <div class="d-flex flex-row rounded-top mb-3">
                                 <div class="d-flex flex-row align-items-center mt-1 mb-1">
                                     <span class="mr-2">
-                                        <img src="/img/demo/avatars/avatar-admin.png" class="rounded-circle profile-image"
-                                            alt="Dr. Codex Lantern">
+                                        <img src="/guru/16. ABDUL MADJID, S.Pd, M.Pd..jpg"
+                                            class="rounded-circle profile-image" alt="Dr. Codex Lantern">
                                     </span>
                                     <div class="info-card-text">
                                         <div class="fs-lg text-truncate text-truncate-lg">Dr. Codex Lantern
@@ -221,6 +223,7 @@
 
         {{-- ALERT --}}
         <x-panel-page>
+            <x-slot name="panel_id">alert-show</x-slot>
             <x-slot name="title">Alert <span class="fw-300"><i>Show</i></span></x-slot>
             <x-slot name="paneltoolbar">
                 <div class="panel-toolbar ml-2 mr-3">
@@ -305,9 +308,10 @@
             @endcomponent
         </x-panel-page>
 
-        <x-panel-page>
+        <x-panel-page>{{-- panel Button and Link Drodwon --}}
+            <x-slot name="panel_id">button-link</x-slot>
             <x-slot name="icon">book</x-slot>
-            <x-slot name="title">Button <span class="fw-300"><i>Dropdown</i></span></x-slot>
+            <x-slot name="title">Button & Link <span class="fw-300"><i>Dropdown</i></span></x-slot>
             <x-slot name="paneltoolbar">
                 <div class="panel-toolbar ml-2 mr-3">
                     <a href="javascript:void(0);" title="Kembali" class="btn btn-primary btn-sm btn-icon">
@@ -315,33 +319,165 @@
                     </a>
                 </div>
             </x-slot>
-            <x-button-dropdown>
-                <x-slot name="style">outline-primary</x-slot>
-                <x-slot name="label">Toast Notification</x-slot>
-                <button class="dropdown-item" type="button" id="success">Toast Success</button>
-                <button class="dropdown-item" type="button" id="info">Toast Info</button>
-                <button class="dropdown-item" type="button" id="error">Toast Error</button>
-                <button class="dropdown-item" type="button" id="warning">Toast Warning</button>
-            </x-button-dropdown>
-            @component('components.button-dropdown', ['style' => 'warning', 'label' => 'Pilihan'])
-                <div class="dropdown-header bg-trans-gradient d-flex flex-row px-4 py-4 rounded-top text-white">
-                    <div class="d-flex flex-row align-items-center mt-1 mb-1 color-white">
-                        <span class="mr-2">
-                            <img src="/img/demo/avatars/avatar-admin.png" class="rounded-circle profile-image"
-                                alt="Dr. Codex Lantern">
-                        </span>
-                        <div class="info-card-text">
-                            <div class="fs-lg text-truncate text-truncate-lg">Dr. Codex Lantern
+            @component('components.column', ['kolom' => 'kolomna_tiga'])
+                @slot('isipertama')
+                    <h5 class="frame-heading">
+                        Button
+                    </h5>
+                    <div class="frame-wrap">
+                        <div class="demo demo-h-spacing">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
                             </div>
-                            <span class="text-truncate text-truncate-md opacity-80">drlantern@gotbootstrap.com</span>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-info rounded-circle btn-icon" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="fal fa-plus"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-danger rounded-circle btn-icon" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="fal fa-plus"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-success btn-icon rounded" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="fal fa-plus"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <button class="dropdown-item" type="button">Action</button>
-                <button class="dropdown-item" type="button">Another action</button>
-                <button class="dropdown-item" type="button">Something else</button>
+                @endslot
+                {{-- comment --}}
+                @slot('isikedua')
+                    <h5 class="frame-heading">
+                        Link
+                    </h5>
+                    <div class="frame-wrap">
+                        <div class="demo demo-h-spacing d-flex">
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown link
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a href="#" class="btn btn-warning rounded-circle btn-icon" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="fal fa-plus"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a href="#" class="btn btn-primary rounded-circle btn-icon" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="fal fa-plus"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a href="#" class="btn btn-default btn-icon" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fal fa-plus"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endslot
+                @slot('isiketiga')
+                    <h5 class="frame-heading">
+                        Toast Notification
+                    </h5>
+                    <div class="frame-wrap">
+                        <div class="demo demo-h-spacing d-flex">
+                            <x-button-dropdown>
+                                <x-slot name="style">outline-primary</x-slot>
+                                <x-slot name="label">Toast Notification</x-slot>
+                                <button class="dropdown-item" type="button" id="success">Toast Success</button>
+                                <button class="dropdown-item" type="button" id="info">Toast Info</button>
+                                <button class="dropdown-item" type="button" id="error">Toast Error</button>
+                                <button class="dropdown-item" type="button" id="warning">Toast Warning</button>
+                            </x-button-dropdown>
+                            @component('components.button-dropdown', ['style' => 'warning', 'label' => 'Pilihan'])
+                                <div class="dropdown-header bg-trans-gradient d-flex flex-row px-4 py-4 rounded-top text-white">
+                                    <div class="d-flex flex-row align-items-center mt-1 mb-1 color-white">
+                                        <span class="mr-2">
+                                            <img src="/img/demo/avatars/avatar-admin.png" class="rounded-circle profile-image"
+                                                alt="Dr. Codex Lantern">
+                                        </span>
+                                        <div class="info-card-text">
+                                            <div class="fs-lg text-truncate text-truncate-lg">Dr. Codex Lantern
+                                            </div>
+                                            <span class="text-truncate text-truncate-md opacity-80">drlantern@gotbootstrap.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="dropdown-item" type="button">Action</button>
+                                <button class="dropdown-item" type="button">Another action</button>
+                                <button class="dropdown-item" type="button">Something else</button>
+                            @endcomponent
+                        </div>
+                    </div>
+                @endslot
             @endcomponent
         </x-panel-page>
+
+
         <div class="fs-lg fw-300 p-5 bg-white border-faded rounded mb-g">
             <h3 class="mb-g">
                 Hi Everyone,
@@ -598,6 +734,9 @@
                         'title_modal' => 'Input Data',
                     ])
                         <div class="alert alert-info mb-0 mt-0">
+                            <h5 class="frame-heading">
+                                Button
+                            </h5>
                             Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the
                             document
                             and remove scroll from the body so that modal content scrolls instead. Bootstrap only supports one

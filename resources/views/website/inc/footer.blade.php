@@ -1,17 +1,10 @@
 <footer id="footer">
     <div class="container">
-
         <div class="row">
-
             <div class="col-md-3">
-                <!-- Footer Logo -->
                 <img class="footer-logo" src="/website/assets/images/_smarty/logo-footer.png" alt="" />
-
-                <!-- Small Description -->
                 <p>Sekolah Menengah Kejuruan berbasis ramah anak dan inklusif</p>
-
-                <!-- Contact Address -->
-                <address>
+                <address class='mb-10'>
                     <ul class="list-unstyled">
                         <li class="footer-sprite address">
                             Jl. Siliwangi No. 30<br>
@@ -26,13 +19,12 @@
                         </li>
                     </ul>
                 </address>
-                <!-- /Contact Address -->
-
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.8765823417375!2d108.16853717484327!3d-6.784870466353262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f290a172857b7%3A0x9b75b5e0e32203c8!2sSMKN%201%20Kadipaten!5e0!3m2!1sid!2sid!4v1704848139062!5m2!1sid!2sid"
+                    width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
             <div class="col-md-3">
-
-                <!-- Latest Blog Post -->
                 <h4 class="letter-spacing-1">LATEST NEWS</h4>
                 <ul class="footer-posts list-unstyled">
                     <li>
@@ -52,24 +44,7 @@
 
             </div>
 
-            <div class="col-md-2">
-
-                <!-- Links -->
-                <h4 class="letter-spacing-1">EXPLORE SMARTY</h4>
-                <ul class="footer-links list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Our Clients</a></li>
-                    <li><a href="#">Our Pricing</a></li>
-                    <li><a href="#">Smarty Tour</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-                <!-- /Links -->
-
-            </div>
-
-            <div class="col-md-4">
+            <div class="col-md-3">
 
                 <!-- Newsletter Form -->
                 <h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
@@ -112,6 +87,10 @@
                 </div>
                 <!-- /Social Icons -->
 
+            </div>
+            <div class="col-md-3">
+                <h4 class="letter-spacing-1">TEAM SOLID</h4>
+                <p>Subscribe to Our Newsletter to get Important News &amp; Offers</p>
             </div>
 
         </div>

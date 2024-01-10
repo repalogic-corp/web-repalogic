@@ -1,5 +1,8 @@
 @extends('inc.layout')
 @section('title', 'Tahun Ajaran')
+@section('css_link')
+    <link rel="stylesheet" media="screen, print" href="/css/datagrid/datatables/datatables.bundle.css">
+@endsection
 @section('content')
     <main id="js-page-content" role="main" class="page-content">
         @include('inc.breadcrumb', ['bcrumb' => 'bc_level_dua', 'bc_1' => 'Akademik'])
@@ -13,129 +16,570 @@
                 @endslot
             @endcomponent
         </div>
-        <div class="fs-lg fw-300 p-5 bg-white border-faded rounded mb-g">
-            <h3 class="mb-g">
-                Hi Everyone,
-            </h3>
-            <p>
-                Some time ago we asked for your input, whether you were a seasoned SmartAdmin user or just peeking around
-                the corner, and WOW, did you deliver! After reading each and everyone of your replies on the survey, we have
-                taken each piece of praise and criticism to heart to scope out our plans for SmartAdmin. All feedback will
-                be used to make your favorite theme that much better, but these were some of the highlights.
-            </p>
-            <p>
-                A whopping 72% of you said you were ready for a fresh new design, while SmartAdmin is and a revolutionary
-                view on what a good bootstrap based template should be, having something new to look at can make anyone feel
-                invigorated. And let's be honest, who doesn't like a modern update of your favorite theme! While most you
-                are still happy with the current variations, around 50% of you have asked for vue.js support. With this
-                framework rapidly gaining popularity it is surely one to include in the family of frameworks! And, last, but
-                certainly not least, a very large majority of a staggering 90% wanted more plugins and regular updates.
-            </p>
-            <p>
-                SmartAdmin takes great care to ensure that valuable and popular plugins are supported as much as possible on
-                a drop-in basis, meaning without doing heavy modifications to extend the look and feel of your favorite
-                admin template :) . And if the plugin is in demand enough, we won't hesitate to put in the hours to support
-                the look and feel of SmartAdmin.
-            </p>
-            <p>
-                But how you ask? Well in order to make the next version of SmartAdmin the best ever and to re-deliver on our
-                promise of continued support and quality, we wrote the theme from the ground-up using the latest Bootstrap
-                practises. As a result we are better able to support new frameworks as they come up and ensure that plugin
-                support is quick and reliable. In addition we have partnered up with some of the communities best developers
-                to ensure that our tailor made variations are of top-notch quality and follow the principles that we at
-                SmartAdmin take to heart.
-            </p>
-            <p>
-                We're really confident that SmartAdmin 4.0 will bring back that first theme experience while still keeping
-                the familiarity that you have grown used to. It's a brand new theme, but with all the things you love and
-                then some. And to ensure that you our loyal customers get this experience first-hand, we will be publishing
-                the HTML update free-of-charge as an update to your current SmartAdmin license!
-            </p>
-            <p>
-                Last but not least, we would like to thank each and everyone of you, our loyal customers, for your patience
-                and continued support in SmartAdmin. Without you this would not have been possible!
-            </p>
-            <p>
-                Sincerely,<br>
-                The SmartAdmin Team<br>
-            </p>
-        </div>
-        <h3>
-            SmartAdmin Team
-            <small class="mb-0">We build cool things...</small>
-        </h3>
-        <div class="d-flex flex-wrap demo demo-h-spacing mt-3 mb-3">
-            <div
-                class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                <img src="/img/demo/authors/sunny.png" alt="Sunny A." class="img-thumbnail img-responsive rounded-circle"
-                    style="width:5rem; height: 5rem;">
-                <div class="ml-2 mr-3">
-                    <h5 class="m-0">
-                        Sunny A. (UI/UX Expert)
-                        <small class="m-0 fw-300">
-                            Lead Author
-                        </small>
-                    </h5>
-                    <a href="https://twitter.com/@myplaneticket" class="text-info fs-sm" target="_blank">@myplaneticket</a>
-                    -
-                    <a href="https://wrapbootstrap.com/user/myorange" class="text-info fs-sm" target="_blank"
-                        title="Contact Sunny"><i class="fal fa-envelope"></i></a>
-                </div>
-            </div>
-            <div
-                class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                <img src="/img/demo/authors/josh.png" alt="Jos K." class="img-thumbnail img-responsive rounded-circle"
-                    style="width:5rem; height: 5rem;">
-                <div class="ml-2 mr-3">
-                    <h5 class="m-0">
-                        Jos K. (ASP.NET Developer)
-                        <small class="m-0 fw-300">
-                            Partner &amp; Contributor
-                        </small>
-                    </h5>
-                    <a href="https://twitter.com/@atlantez" class="text-info fs-sm" target="_blank">@atlantez</a> -
-                    <a href="https://wrapbootstrap.com/user/Walapa" class="text-info fs-sm" target="_blank"
-                        title="Contact Jos"><i class="fal fa-envelope"></i></a>
-                </div>
-            </div>
-            <div
-                class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                <img src="/img/demo/authors/jovanni.png" alt="Jovanni Lo"
-                    class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                <div class="ml-2 mr-3">
-                    <h5 class="m-0">
-                        Jovanni L. (PHP Developer)
-                        <small class="m-0 fw-300">
-                            Partner &amp; Contributor
-                        </small>
-                    </h5>
-                    <a href="https://twitter.com/@lodev09" class="text-info fs-sm" target="_blank">@lodev09</a> -
-                    <a href="https://wrapbootstrap.com/user/lodev09" class="text-info fs-sm" target="_blank"
-                        title="Contact Jovanni"><i class="fal fa-envelope"></i></a>
-                </div>
-            </div>
-            <div
-                class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                <img src="/img/demo/authors/roberto.png" alt="Jovanni Lo"
-                    class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                <div class="ml-2 mr-3">
-                    <h5 class="m-0">
-                        Roberto R. (Rails Developer)
-                        <small class="m-0 fw-300">
-                            Partner &amp; Contributor
-                        </small>
-                    </h5>
-                    <a href="https://twitter.com/@sildur" class="text-info fs-sm" target="_blank">@sildur</a> -
-                    <a href="https://wrapbootstrap.com/user/sildur" class="text-info fs-sm" target="_blank"
-                        title="Contact Roberto"><i class="fal fa-envelope"></i></a>
-                </div>
-            </div>
-        </div>
-        <p class="fs-lg">
-            <a href="#" class="fw-500 fs-xl">> Ready to join our dedicated team?</a><br>
-            We are always on the lookout to expand and add unique app flavors to SmartAdmin. If you think you can contribute
-            and create your very own flavors, get in touch with us or <a href="#" target="_blank">click here to learn
-                more</a> about our partnership program.
-        </p>
+        @component('components.column', ['kolom' => 'kolomna_dua'])
+            @slot('isipertama')
+                <x-panel-page>
+                    <x-slot name="panel_id">input-tahun-ajar</x-slot>
+                    <x-slot name="icon">plus</x-slot>
+                    <x-slot name="title">Pilih <span class="fw-300"><i>Tahun Ajar dan Semester</i></span></x-slot>
+                    <x-slot name="paneltoolbar">
+                        <div class="panel-toolbar ml-2 mr-3">
+                            <button class="btn btn-primary btn-sm" data-toggle="dropdown">Table Style</button>
+                            <div class="dropdown-menu dropdown-menu-animated dropdown-menu-right position-absolute pos-top">
+                                <button class="dropdown-item active" data-action="toggle" data-class="table-bordered"
+                                    data-target="#dt-basic-example"> Bordered Table </button>
+                                <button class="dropdown-item" data-action="toggle" data-class="table-sm"
+                                    data-target="#dt-basic-example"> Smaller Table </button>
+                                <button class="dropdown-item" data-action="toggle" data-class="table-dark"
+                                    data-target="#dt-basic-example"> Table Dark </button>
+                                <button class="dropdown-item active" data-action="toggle" data-class="table-hover"
+                                    data-target="#dt-basic-example"> Table Hover </button>
+                                <button class="dropdown-item active" data-action="toggle" data-class="table-stripe"
+                                    data-target="#dt-basic-example"> Table Stripped </button>
+                                <div class="dropdown-divider m-0"></div>
+                                <div class="dropdown-multilevel dropdown-multilevel-left">
+                                    <div class="dropdown-item">
+                                        tbody color
+                                    </div>
+                                    <div class="dropdown-menu no-transition-delay">
+                                        <div class="js-tbody-colors dropdown-multilevel dropdown-multilevel-left d-flex flex-wrap"
+                                            style="width: 15.9rem; padding: 0.5rem">
+                                            <a href="javascript:void(0);" data-bg="bg-primary-100"
+                                                class="btn d-inline-block bg-primary-100 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-200"
+                                                class="btn d-inline-block bg-primary-200 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-300"
+                                                class="btn d-inline-block bg-primary-300 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-400"
+                                                class="btn d-inline-block bg-primary-400 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-500"
+                                                class="btn d-inline-block bg-primary-500 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-600"
+                                                class="btn d-inline-block bg-primary-600 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-700"
+                                                class="btn d-inline-block bg-primary-700 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-800"
+                                                class="btn d-inline-block bg-primary-800 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-900"
+                                                class="btn d-inline-block bg-primary-900 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-100"
+                                                class="btn d-inline-block bg-success-100 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-200"
+                                                class="btn d-inline-block bg-success-200 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-300"
+                                                class="btn d-inline-block bg-success-300 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-400"
+                                                class="btn d-inline-block bg-success-400 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-500"
+                                                class="btn d-inline-block bg-success-500 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-600"
+                                                class="btn d-inline-block bg-success-600 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-700"
+                                                class="btn d-inline-block bg-success-700 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-800"
+                                                class="btn d-inline-block bg-success-800 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-900"
+                                                class="btn d-inline-block bg-success-900 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-100"
+                                                class="btn d-inline-block bg-info-100 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-200"
+                                                class="btn d-inline-block bg-info-200 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-300"
+                                                class="btn d-inline-block bg-info-300 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-400"
+                                                class="btn d-inline-block bg-info-400 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-500"
+                                                class="btn d-inline-block bg-info-500 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-600"
+                                                class="btn d-inline-block bg-info-600 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-700"
+                                                class="btn d-inline-block bg-info-700 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-800"
+                                                class="btn d-inline-block bg-info-800 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-900"
+                                                class="btn d-inline-block bg-info-900 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-100"
+                                                class="btn d-inline-block bg-danger-100 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-200"
+                                                class="btn d-inline-block bg-danger-200 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-300"
+                                                class="btn d-inline-block bg-danger-300 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-400"
+                                                class="btn d-inline-block bg-danger-400 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-500"
+                                                class="btn d-inline-block bg-danger-500 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-600"
+                                                class="btn d-inline-block bg-danger-600 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-700"
+                                                class="btn d-inline-block bg-danger-700 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-800"
+                                                class="btn d-inline-block bg-danger-800 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-900"
+                                                class="btn d-inline-block bg-danger-900 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-100"
+                                                class="btn d-inline-block bg-warning-100 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-200"
+                                                class="btn d-inline-block bg-warning-200 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-300"
+                                                class="btn d-inline-block bg-warning-300 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-400"
+                                                class="btn d-inline-block bg-warning-400 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-500"
+                                                class="btn d-inline-block bg-warning-500 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-600"
+                                                class="btn d-inline-block bg-warning-600 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-700"
+                                                class="btn d-inline-block bg-warning-700 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-800"
+                                                class="btn d-inline-block bg-warning-800 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-900"
+                                                class="btn d-inline-block bg-warning-900 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-100"
+                                                class="btn d-inline-block bg-fusion-100 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-200"
+                                                class="btn d-inline-block bg-fusion-200 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-300"
+                                                class="btn d-inline-block bg-fusion-300 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-400"
+                                                class="btn d-inline-block bg-fusion-400 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-500"
+                                                class="btn d-inline-block bg-fusion-500 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-600"
+                                                class="btn d-inline-block bg-fusion-600 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-700"
+                                                class="btn d-inline-block bg-fusion-700 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-800"
+                                                class="btn d-inline-block bg-fusion-800 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-900"
+                                                class="btn d-inline-block bg-fusion-900 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg=""
+                                                class="btn d-inline-block bg-white border width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-multilevel dropdown-multilevel-left">
+                                    <div class="dropdown-item">
+                                        thead color
+                                    </div>
+                                    <div class="dropdown-menu no-transition-delay">
+                                        <div class="js-thead-colors dropdown-multilevel dropdown-multilevel-left d-flex flex-wrap"
+                                            style="width: 15.9rem; padding: 0.5rem">
+                                            <a href="javascript:void(0);" data-bg="bg-primary-100"
+                                                class="btn d-inline-block bg-primary-100 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-200"
+                                                class="btn d-inline-block bg-primary-200 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-300"
+                                                class="btn d-inline-block bg-primary-300 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-400"
+                                                class="btn d-inline-block bg-primary-400 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-500"
+                                                class="btn d-inline-block bg-primary-500 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-600"
+                                                class="btn d-inline-block bg-primary-600 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-700"
+                                                class="btn d-inline-block bg-primary-700 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-800"
+                                                class="btn d-inline-block bg-primary-800 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-primary-900"
+                                                class="btn d-inline-block bg-primary-900 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-100"
+                                                class="btn d-inline-block bg-success-100 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-200"
+                                                class="btn d-inline-block bg-success-200 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-300"
+                                                class="btn d-inline-block bg-success-300 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-400"
+                                                class="btn d-inline-block bg-success-400 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-500"
+                                                class="btn d-inline-block bg-success-500 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-600"
+                                                class="btn d-inline-block bg-success-600 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-700"
+                                                class="btn d-inline-block bg-success-700 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-800"
+                                                class="btn d-inline-block bg-success-800 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-success-900"
+                                                class="btn d-inline-block bg-success-900 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-100"
+                                                class="btn d-inline-block bg-info-100 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-200"
+                                                class="btn d-inline-block bg-info-200 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-300"
+                                                class="btn d-inline-block bg-info-300 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-400"
+                                                class="btn d-inline-block bg-info-400 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-500"
+                                                class="btn d-inline-block bg-info-500 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-600"
+                                                class="btn d-inline-block bg-info-600 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-700"
+                                                class="btn d-inline-block bg-info-700 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-800"
+                                                class="btn d-inline-block bg-info-800 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-info-900"
+                                                class="btn d-inline-block bg-info-900 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-100"
+                                                class="btn d-inline-block bg-danger-100 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-200"
+                                                class="btn d-inline-block bg-danger-200 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-300"
+                                                class="btn d-inline-block bg-danger-300 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-400"
+                                                class="btn d-inline-block bg-danger-400 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-500"
+                                                class="btn d-inline-block bg-danger-500 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-600"
+                                                class="btn d-inline-block bg-danger-600 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-700"
+                                                class="btn d-inline-block bg-danger-700 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-800"
+                                                class="btn d-inline-block bg-danger-800 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-danger-900"
+                                                class="btn d-inline-block bg-danger-900 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-100"
+                                                class="btn d-inline-block bg-warning-100 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-200"
+                                                class="btn d-inline-block bg-warning-200 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-300"
+                                                class="btn d-inline-block bg-warning-300 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-400"
+                                                class="btn d-inline-block bg-warning-400 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-500"
+                                                class="btn d-inline-block bg-warning-500 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-600"
+                                                class="btn d-inline-block bg-warning-600 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-700"
+                                                class="btn d-inline-block bg-warning-700 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-800"
+                                                class="btn d-inline-block bg-warning-800 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-warning-900"
+                                                class="btn d-inline-block bg-warning-900 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-100"
+                                                class="btn d-inline-block bg-fusion-100 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-200"
+                                                class="btn d-inline-block bg-fusion-200 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-300"
+                                                class="btn d-inline-block bg-fusion-300 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-400"
+                                                class="btn d-inline-block bg-fusion-400 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-500"
+                                                class="btn d-inline-block bg-fusion-500 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-600"
+                                                class="btn d-inline-block bg-fusion-600 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-700"
+                                                class="btn d-inline-block bg-fusion-700 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-800"
+                                                class="btn d-inline-block bg-fusion-800 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg="bg-fusion-900"
+                                                class="btn d-inline-block bg-fusion-900 width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                            <a href="javascript:void(0);" data-bg=""
+                                                class="btn d-inline-block bg-white border width-2 height-2 p-0 rounded-0"
+                                                style="margin:1px"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </x-slot>
+                    <!-- datatable start -->
+                    <table id="dt-basic-example" class="table table-bordered table-hover table-striped w-100">
+                        <thead>
+                            <tr>
+                                <th>Tahun Ajaran</th>
+                                <th>Ganjil/Genap</th>
+                                <th>Aktif</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2020-2021</td>
+                                <td>Ganjil</td>
+                                <td align="center">
+                                    <div class="custom-control custom-checkbox mr-2">
+                                        <input type="checkbox" class="custom-control-input" id="demoCheck1">
+                                        <label class="custom-control-label" for="demoCheck1"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2020-2021</td>
+                                <td>Genap</td>
+                                <td align="center">
+                                    <div class="custom-control custom-checkbox mr-2">
+                                        <input type="checkbox" class="custom-control-input" id="demoCheck2">
+                                        <label class="custom-control-label" for="demoCheck2"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2021-2022</td>
+                                <td>Ganjil</td>
+                                <td align="center">
+                                    <div class="custom-control custom-checkbox mr-2">
+                                        <input type="checkbox" class="custom-control-input" id="demoCheck3">
+                                        <label class="custom-control-label" for="demoCheck3"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2021-2022</td>
+                                <td>Genap</td>
+                                <td align="center">
+                                    <div class="custom-control custom-checkbox mr-2">
+                                        <input type="checkbox" class="custom-control-input" id="demoCheck4">
+                                        <label class="custom-control-label" for="demoCheck4"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2022-2023</td>
+                                <td>Ganjil</td>
+                                <td align="center">
+                                    <div class="custom-control custom-checkbox mr-2">
+                                        <input type="checkbox" class="custom-control-input" id="demoCheck5">
+                                        <label class="custom-control-label" for="demoCheck5"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2022-2023</td>
+                                <td>Genap</td>
+                                <td align="center">
+                                    <div class="custom-control custom-checkbox mr-2">
+                                        <input type="checkbox" class="custom-control-input" id="demoCheck6">
+                                        <label class="custom-control-label" for="demoCheck6"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2023-2024</td>
+                                <td>Ganjil</td>
+                                <td align="center">
+                                    <div class="custom-control custom-checkbox mr-2">
+                                        <input type="checkbox" class="custom-control-input" id="demoCheck7">
+                                        <label class="custom-control-label" for="demoCheck7"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2023-2024</td>
+                                <td>Genap</td>
+                                <td align="center">
+                                    <div class="custom-control custom-checkbox mr-2">
+                                        <input type="checkbox" class="custom-control-input" id="demoCheck8" checked>
+                                        <label class="custom-control-label" for="demoCheck8"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2024-2025</td>
+                                <td>Ganjil</td>
+                                <td align="center">
+                                    <div class="custom-control custom-checkbox mr-2">
+                                        <input type="checkbox" class="custom-control-input" id="demoCheck9">
+                                        <label class="custom-control-label" for="demoCheck9"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2024-2025</td>
+                                <td>Genap</td>
+                                <td align="center">
+                                    <div class="custom-control custom-checkbox mr-2">
+                                        <input type="checkbox" class="custom-control-input" id="demoCheck10">
+                                        <label class="custom-control-label" for="demoCheck10"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- datatable end -->
+                </x-panel-page>
+            @endslot
+            @slot('isikedua')
+                <x-panel-page>
+                    <x-slot name="panel_id">input-tahun-ajar</x-slot>
+                    <x-slot name="icon">plus</x-slot>
+                    <x-slot name="title">Input Tahun Ajaran</x-slot>
+                    <form action="" method="post" class="form-horizontal">
+                        <div class="form-group row">
+                            <label for="inputthaajar" class="col-form-label col-sm-2 text-sm-right form-label">Tahun
+                                Ajar</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="inputthaajar" placeholder="Tahun Ajaran">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="pilihsemester" class="col-form-label col-sm-2 text-sm-right form-label">Semester</label>
+                            <div class="col-sm-4">
+                                <select class="custom-select form-control" id="pilihsemester">
+                                    <option value="">Pilih Semester</option>
+                                    <option value="Ganjil">Ganjil</option>
+                                    <option value="Ganjil">Genap</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="pilihaktif" class="col-form-label col-sm-2 text-sm-right form-label">Aktif</label>
+                            <div class="col-sm-10">
+                                <div class="custom-control custom-radio custom-control-inline mt-2">
+                                    <input type="radio" class="custom-control-input form-control" id="defaultInline1Radio"
+                                        name="inlineDefaultRadiosExample">
+                                    <label class="custom-control-label" for="defaultInline1Radio">Aktif</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input form-control" id="defaultInline2Radio"
+                                        name="inlineDefaultRadiosExample" checked="">
+                                    <label class="custom-control-label" for="defaultInline2Radio">Tidak Aktif</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <x-slot name="panelfooter">
+                        <div
+                            class="d-flex align-items-center panel-content py-2 rounded-bottom bg-faded border-faded border-left-0 border-right-0 border-bottom-0 text-muted">
+                            <a href="javascript:void(0);" class="btn btn-primary btn-sm ml-auto"> <i class="fal fa-inbox-in"></i>
+                                Save</a>
+                        </div>
+                    </x-slot>
+                </x-panel-page>
+            @endslot
+        @endcomponent
     </main>
+@endsection
+@section('plugin')
+    <script src="/js/datagrid/datatables/datatables.bundle.js"></script>
+    <script>
+        /* demo scripts for change table color */
+        /* change background */
+
+
+        $(document).ready(function() {
+            $('#dt-basic-example').dataTable({
+                responsive: true
+            });
+
+            $('.js-thead-colors a').on('click', function() {
+                var theadColor = $(this).attr("data-bg");
+                console.log(theadColor);
+                $('#dt-basic-example thead').removeClassPrefix('bg-').addClass(theadColor);
+            });
+
+            $('.js-tbody-colors a').on('click', function() {
+                var theadColor = $(this).attr("data-bg");
+                console.log(theadColor);
+                $('#dt-basic-example').removeClassPrefix('bg-').addClass(theadColor);
+            });
+
+        });
+    </script>
 @endsection

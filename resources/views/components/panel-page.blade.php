@@ -1,4 +1,4 @@
-<div id="panel-id" class="panel" data-panel-collapsed data-panel-fullscreen data-panel-close data-panel-locked
+<div id="{{ $panel_id }}" class="panel" data-panel-collapsed data-panel-fullscreen data-panel-close data-panel-locked
     data-panel-refresh data-panel-reset data-panel-color data-panel-custombutton>
     <div class="panel-hdr">
         <h2>

@@ -62,7 +62,7 @@
     </a>
     <ul>
         <li class="{{ Request::is('/') ? 'active' : '' }}">
-            <a href="/" title="Profil Aplikasi" data-filter-tags="web dashboard">
+            <a href="/" title="Web Dashboard" data-filter-tags="web dashboard">
                 <span class="nav-link-text" data-i18n="nav.web_dashboard_web">Dashboard Web</span>
             </a>
         </li>
